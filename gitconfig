@@ -1,0 +1,17 @@
+[user]
+	name = Muyiwa Olu
+	email = muyiwa@adesanmi.com
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/.gitignore
+[push]
+	default = current
+[alias]
+	lg = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[pull]
+	rebase = true
+[include]
+	path = ~/.gitconfig.local
+	path = /Users/muyiwa/.config/dev/gitconfig
+[init]
+	defaultBranch = main

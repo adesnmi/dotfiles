@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+
+    # git
+    ~/.gitignore: gitignore
+    ~/.gitconfig: gitconfig
+
+    # vim / neovim
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.config/nvim: config/nvim
+
+    # unix
+    ~/.zshrc: zshrc
+
+    # macos
+    ~/.Brewfile: homebrew/Brewfile

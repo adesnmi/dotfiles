@@ -1,0 +1,17 @@
+brew "git"
+brew "zsh"
+brew "vim"
+brew "diff-so-fancy"
+brew "neovim"
+brew "ripgrep"
+brew "the_silver_searcher"
+brew "fd"
+brew "zsh-completions"
+brew "prettier"
+
+
+brew "python"
+brew "lua"
+brew "luarocks"
+brew "efm-langserver"
+brew "ninja"
