@@ -1,5 +1,5 @@
 # Unix
-export EDITOR=nvim
+export EDITOR=vim
 
 # Aliases
 alias g="git"
@@ -9,10 +9,10 @@ alias b="bundle"
 # [[ -f "$HOME/.zsh-autocomplete/zsh-autocomplete.plugin.zsh" ]] && source "$HOME/.zsh-autocomplete/zsh-autocomplete.plugin.zsh"
 
 # Prompt
-# Left 
+# Left
 PROMPT='%~ (%?) (%T) > '
 
-# Right 
+# Right
 # https://stackoverflow.com/a/1128583/4165455
 setopt prompt_subst
 autoload -Uz vcs_info
@@ -60,7 +60,7 @@ export NVM_DIR=~/.nvm
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-# Local config 
+# Local config
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 
