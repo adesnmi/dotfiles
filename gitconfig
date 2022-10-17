@@ -12,6 +12,5 @@
 	rebase = true
 [include]
 	path = ~/.gitconfig.local
-	path = /Users/muyiwa/.config/dev/gitconfig
 [init]
 	defaultBranch = main
