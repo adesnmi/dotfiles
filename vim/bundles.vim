@@ -3,7 +3,29 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin()
 
 " General
-source ~/.vim/bundles.shared.vim
+Plug 'elixir-lang/vim-elixir'
+Plug 'fatih/vim-go'
+Plug 'vim-test/vim-test'
+Plug 'pangloss/vim-javascript'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/tComment'
+Plug 'preservim/nerdtree'
+Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'github/copilot.vim'
+Plug 'skywind3000/asyncrun.vim'
 
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
