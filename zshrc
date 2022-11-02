@@ -67,8 +67,12 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 if [ "$SPIN" ]; then
   # Remove old versions of fzf
-  sudo rm /usr/local/bin/fzf
-  sudo rm /usr/bin/fzf
+  [[ -f "/usr/local/bin/fzf" ]] && sudo rm /usr/local/bin/fzf
+  [[ -f "/usr/bin/fzf" ]] && sudo rm /usr/bin/fzf
+
+  # Install Linuxbrew
+  [[ ! -x "/opt/homebrew/bin/brew" ]] && NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 fi
 
 alias luamake=/Users/muyiwa/.config/nvim/lua-language-server/3rd/luamake/luamake
