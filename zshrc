@@ -63,7 +63,12 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Local config
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ "$SPIN" ]; then
+  # Remove old versions of fzf
+  sudo rm /usr/local/bin/fzf
+  sudo rm /usr/bin/fzf
+fi
 
 alias luamake=/Users/muyiwa/.config/nvim/lua-language-server/3rd/luamake/luamake
