@@ -71,7 +71,6 @@ if [ "$SPIN" ]; then
   [[ -f "/usr/bin/fzf" ]] && sudo rm /usr/bin/fzf
 
   # Install Linuxbrew
-  [[ ! -x "/opt/homebrew/bin/brew" ]] && NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 fi
 
