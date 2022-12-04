@@ -51,11 +51,6 @@ fi
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# Shopify
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
-[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
-
 # Deno
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
@@ -64,14 +59,3 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-if [ "$SPIN" ]; then
-  # Remove old versions of fzf
-  [[ -f "/usr/local/bin/fzf" ]] && sudo rm /usr/local/bin/fzf
-  [[ -f "/usr/bin/fzf" ]] && sudo rm /usr/bin/fzf
-
-  # Install Linuxbrew
-  [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
-fi
-
-alias luamake=/Users/muyiwa/.config/nvim/lua-language-server/3rd/luamake/luamake
