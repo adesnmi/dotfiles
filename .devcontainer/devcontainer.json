@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.192.0/containers/ubuntu
 {
   "name": "dotfiles",
-  "image": "ghcr.io/muyiwaolu/devbox:latest",
+  "image": "ghcr.io/adesnmi/devbox:latest",
   // Set *default* container specific settings.json values on container create.
   "settings": {},
   // Add the IDs of extensions you want installed when the container is created.
