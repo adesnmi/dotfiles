@@ -2,10 +2,6 @@
 " Therefore, this should contain configuration that is common to both
 set encoding=utf-8
 
-" Colours
-syntax on
-set termguicolors
-set hidden
 
 " Enable mouse support
 set mouse=nv
@@ -103,6 +99,14 @@ let test#strategy = {
 source ~/.vim/bundles.vim
 source ~/.vim/keybindings.vim
 
+" Colours
+set termguicolors
+set hidden
+
+syntax on
+colorscheme onedark
+filetype plugin indent on
+
 " ALE linting events
 augroup ale
   autocmd!
@@ -162,6 +166,3 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 
-" Colours
-colorscheme onedark
-filetype plugin indent on
