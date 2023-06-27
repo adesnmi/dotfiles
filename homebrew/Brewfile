@@ -8,6 +8,7 @@ brew "the_silver_searcher"
 brew "fd"
 brew "zsh-completions"
 brew "prettier"
+brew "postgresql"
 
 
 brew "python"
